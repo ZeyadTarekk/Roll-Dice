@@ -12,15 +12,12 @@ const btnRoll = document.querySelector(".btn--roll");
 const btnNew = document.querySelector(".btn--new");
 const btnHold = document.querySelector(".btn--hold");
 
-// Starting game logic
-player1ScoreEl.textContent = 0;
-player2ScoreEl.textContent = 0;
-diceEl.classList.add("hidden");
+let playing = true;
+newGame();
 
 btnRoll.addEventListener("click", rollingDice);
 btnHold.addEventListener("click", holdScore);
-
-let playing = true;
+btnNew.addEventListener("click", newGame);
 
 // Rolling dice function
 function rollingDice() {
@@ -61,7 +58,7 @@ function holdScore() {
       Number(player1ScoreEl.textContent) +
       Number(player1CurrentScoreEl.textContent);
 
-    if (Number(player1ScoreEl.textContent) >= 15) {
+    if (Number(player1ScoreEl.textContent) >= 100) {
       playing = false;
       document.querySelector(".player--0").classList.add("player--winner");
       document.querySelector(".player--0").classList.remove("player--active");
@@ -74,13 +71,28 @@ function holdScore() {
       Number(player2ScoreEl.textContent) +
       Number(player2CurrentScoreEl.textContent);
 
-    if (Number(player2ScoreEl.textContent) >= 15) {
+    if (Number(player2ScoreEl.textContent) >= 100) {
       playing = false;
       document.querySelector(".player--1").classList.add("player--winner");
       document.querySelector(".player--1").classList.remove("player--active");
       diceEl.classList.add("hidden");
     } else switchPlayers();
   }
+}
+
+// New game function
+function newGame() {
+  // Starting game logic
+  playing = true;
+  diceEl.classList.add("hidden");
+  document.querySelector(".player--0").classList.add("player--active");
+  document.querySelector(".player--1").classList.remove("player--active");
+  document.querySelector(".player--0").classList.remove("player--winner");
+  document.querySelector(".player--1").classList.remove("player--winner");
+  player1CurrentScoreEl.textContent = 0;
+  player2CurrentScoreEl.textContent = 0;
+  player1ScoreEl.textContent = 0;
+  player2ScoreEl.textContent = 0;
 }
 
 // Helper functions
