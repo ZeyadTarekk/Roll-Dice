@@ -4,7 +4,7 @@
 [![GitHub license](https://img.shields.io/github/license/ZeyadTarekk/Roll-Dice)](https://github.com/ZeyadTarekk/Roll-Dice/blob/master/LICENSE)
 [![GitHub forks](https://img.shields.io/github/forks/ZeyadTarekk/Roll-Dice)](https://github.com/ZeyadTarekk/Roll-Dice/network/members)
 [![GitHub stars](https://img.shields.io/github/stars/ZeyadTarekk/Roll-Dice)](https://github.com/ZeyadTarekk/Roll-Dice/stargazers)
-[![GitHub Language](https://img.shields.io/github/languages/count/ZeyadTarekk/Roll-Dice)](https://github.com/ZeyadTarekk/Roll-Dice)
+[![GitHub Language](https://img.shields.io/github/languages/top/ZeyadTarekk/Roll-Dice)](https://github.com/ZeyadTarekk/Roll-Dice)
 
 </div>
 
