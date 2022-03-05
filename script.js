@@ -25,7 +25,7 @@ function rollingDice() {
   if (!playing) return;
   const randomNumber = Math.trunc(Math.random() * 6 + 1);
 
-  diceEl.src = `dice-${randomNumber}.png`;
+  diceEl.src = `img/dice-${randomNumber}.png`;
   if (diceEl.classList.contains("hidden")) diceEl.classList.remove("hidden");
 
   // Check if the number is 1
