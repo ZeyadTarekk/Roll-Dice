@@ -31,7 +31,7 @@
 
 ## Live Demo <a name = "demo"></a>
 
-<a href="https://ZeyadTarekk.github.io/Roll-Dice/" >Here</a>
+<a target="_blank" href="https://ZeyadTarekk.github.io/Roll-Dice/" >Here</a>
 
 ## 📷 Demo Screenshots <a name = "Screenshots"></a>
 
